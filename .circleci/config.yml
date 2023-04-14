@@ -11,7 +11,7 @@ jobs:
     create_infrastructure:  # Choose any name, such as `build`
         # The primary container, where your job's commands will run
         docker:
-          - image: amazon/aws-cli:latest steps
+          - image: amazon/aws-cli
         steps:
           - checkout # check out the code in the project directory
           - run: 
